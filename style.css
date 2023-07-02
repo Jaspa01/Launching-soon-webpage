@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000fc;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    padding-left: 6rem;
+    align-items: center;
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    top: 20px;
+}
+
+.launching-soon {
+    margin-top: 8rem;
+}
+
+.maintenance {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h1 span {
+    color: #d31f1f9a;
+}
+
+.count {
+    display: flex;
+    font-family: monospace;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+    padding-right: 30px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.count small {
+    font-size: 12px;
+}
+
+.btn button {
+    padding: 10px 25px;
+    position: relative;
+    border: 2px solid #ffffff72;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.btn button img {
+    width: 8px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+#rocket {
+    width: 200px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #rocket {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .container {
+        padding-left: 4rem;
+    }
+
+    #rocket {
+        right: 4%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #rocket {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #rocket {
+        right: 3%;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #rocket {
+        width: 120px;
+        right: 2%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        padding-left: 3rem;
+    }
+
+    #rocket {
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #rocket {
+        width: 80px;
+    }
+
+    .btn button {
+
+        padding: 8px 12px;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .count small {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .container {
+        padding-left: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        padding-left: 1.5rem;
+    }
+
+    #rocket {
+        width: 70px;
+    }
+}
+
+
+body {
+    overflow: hidden;
+}
